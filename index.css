@@ -1,0 +1,96 @@
+body{
+    background-color: #f7f7f7;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+#container{
+    background-color: #ffff;
+    max-width: 600px;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;    
+    margin-top:50px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,.2);
+}
+.weatherApp{
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#text-input{
+    font-size: 18px;
+    width:60%;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+form input[type="submit"]{
+    font-size: 18px;
+    color: #ffff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background-color .3s ease;
+}
+
+form input[type="submit"]:hover{
+    background-color: #007;
+}
+#weatherdata{
+    align-items: center;
+}
+
+.temp{
+    font-size: 48px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.desc{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.details{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    flex-wrap: nowrap;
+    
+    
+}
+
+.details div{
+    padding: 20px;    
+    background-color: #f7f7f7;
+    margin: 10px;
+    flex:1;
+    border-radius: 5px;
+    text-align: center;
+    min-height: 45px;
+    
+   
+}
+@media(max-width:700px)
+{
+    form{
+        flex-direction: column;
+    }
+    form input[type="text"]
+    {
+        width:100%;
+        margin-bottom: 10px;
+    }
+
+}
